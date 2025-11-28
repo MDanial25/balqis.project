@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Balqis, Bintang Hatiku ✨</title>
+    <!-- Muat turun Tailwind CSS untuk styling yang cantik dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Konfigurasi Tailwind untuk menggunakan font Inter yang lebih moden -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-pink': '#FF69B4', // Hot Pink
+                        'secondary-rose': '#FBCFE8', // Light Rose
+                        'bg-light': '#FFF0F5', // Lavender Blush
+                        'text-dark': '#333333',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        cursive: ['Pacifico', 'cursive'], // Font gaya tulisan tangan
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@100..900&display=swap');
+        
+        /* Custom background pattern */
+        body {
+            background-color: theme('colors.bg-light');
+            background-image: radial-gradient(theme('colors.secondary-rose') 1px, transparent 1px), radial-gradient(theme('colors.secondary-rose') 1px, transparent 1px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+        }
+
+        .card {
+            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(255, 105, 180, 0.4);
+        }
+
+        /* Animation for the main heading */
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .heartbeat {
+            animation: heartbeat 1.5s infinite;
+        }
+    </style>
+</head>
+<body class="font-sans text-text-dark min-h-screen p-4 sm:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-3xl p-6 sm:p-10 card">
+        
+        <!-- Header & Ucapan Cinta -->
+        <header class="text-center mb-10">
+            <h1 class="text-5xl sm:text-7xl font-cursive text-primary-pink mb-4 heartbeat">
+                Untuk Balqis ❤️
+            </h1>
+            <p class="text-xl sm:text-2xl text-gray-700 font-semibold italic">
+                Cahaya hidup dan inspirasiku.
+            </p>
+        </header>
+
+        <!-- Bahagian Gambar & Pengenalan -->
+        <section class="flex flex-col md:flex-row items-center gap-8 mb-12 border-b-2 border-primary-pink/30 pb-8">
+            
+            <!-- Gambar Placeholder (Sila Ganti URL ini dengan gambar Balqis sebenar!) -->
+            <div class="flex-shrink-0 w-full md:w-1/3">
+                <img 
+                    src="gmbar balq.jpg" 
+                    alt="Gambar Balqis - Gantikan dengan gambar sebenar!" 
+                    class="w-full h-auto object-cover rounded-2xl ring-4 ring-primary-pink/50 hover:ring-primary-pink transition duration-300"
+                    onerror="this.onerror=null; this.src='https://placehold.co/400x400/DDA0DD/ffffff?text=Gambar+Balqis+Tiada';"
+                />
+            </div>
+
+            <!-- Pesanan Istimewa -->
+            <div class="md:w-2/3 text-lg space-y-4">
+                <h2 class="text-3xl font-bold text-primary-pink">Sekeping Hati Daripada Saya</h2>
+                <p>
+                    Hai Balqis, ni aku buat ni just nk tunjuk ke mung betapa syg aku kat mu. dok ahu la kalu mu pilih yg sebaliknya jgk lepasni.
+                    I happy kita yg sekarang. I harap sngat syg bersyukur, sabar, walaupun i akan jarang masa dgn u, u faham i. I tk kisah yg lain 
+                    yg penting syg bersabar n setia smpai akhir. Bgi i syg 
+                     adalah anugerah yang tidak ternilai, sentiasa membawa keceriaan selalu eventho emosi awak tidak stabil. tpi sy sentiasa happy.
+                    disini sy juga ingin meraikan diri awak yang menawan dan istimewa. 
+                     keceriaan dan kedamaian dalam setiap saat dlm hidup kita. Terima kasih kerana menjadi diri awak.
+                     sy harap awak lebih memahami sy walaupun sy kurang masa, or anything. syg tidak menagih kasih dripada org lain.
+                     Thank you yang counting days with you. More to go.
+            
+                   
+                </p>
+                <p class="text-primary-pink font-bold mt-4">
+                    — Daripada Si Dia Yang Sentiasa Sayang.
+                </p>
+            </div>
+        </section>
+
+        <!-- Bahagian Biodata -->
+        <section class="mb-10">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-center text-primary-pink mb-8 border-b-4 border-secondary-rose pb-2">
+                Mengenali Si Dia (Balqis)
+            </h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                
+                <!-- Biodata Item 1 -->
+                <div class="p-6 bg-bg-light rounded-xl border border-secondary-rose transition duration-300 hover:border-primary-pink">
+                    <div class="text-2xl text-primary-pink mb-2">
+                        <span class="mr-2">🎂</span> Tarikh Lahir
+                    </div>
+                    <p class="text-xl font-medium">5 Januari 2005</p>
+                </div>
+
+                <!-- Biodata Item 2 -->
+                <div class="p-6 bg-bg-light rounded-xl border border-secondary-rose transition duration-300 hover:border-primary-pink">
+                    <div class="text-2xl text-primary-pink mb-2">
+                        <span class="mr-2">🎓</span> Pendidikan
+                    </div>
+                    <p class="text-xl font-medium">Sedang menuntut ilmu di Politeknik Hulu Terengganu</p>
+                </div>
+
+                <!-- Biodata Item 3 -->
+                <div class="p-6 bg-bg-light rounded-xl border border-secondary-rose transition duration-300 hover:border-primary-pink">
+                    <div class="text-2xl text-primary-pink mb-2">
+                        <span class="mr-2">🎨</span> Hobi & Minat
+                    </div>
+                    <ul class="list-disc list-inside ml-4 text-lg">
+                        <li>selalu comel dan ceria tpi ikut bulan</li>
+                        <li>selalu cri gaduh</li>
+                        <li>fav colour: Pink dan Cream</li>
+                    </ul>
+                </div>
+
+                <!-- Biodata Item 4 -->
+                <div class="p-6 bg-bg-light rounded-xl border border-secondary-rose transition duration-300 hover:border-primary-pink">
+                    <div class="text-2xl text-primary-pink mb-2">
+                        <span class="mr-2">💖</span> Sifat Paling Disukai
+                    </div>
+                    <p class="text-xl font-medium italic">
+                        "Keikhlasan, kepandaian, dan senyuman yang mampu menceriakan hari saya hihihihigigiihi."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center pt-8 border-t-2 border-primary-pink/30 mt-10">
+            <p class="text-sm text-gray-600">
+                Dicipta dengan kasih sayang oleh kekasih hati Balqis iaitu Danial.
+            </p>
+        </footer>
+
+    </div>
+</body>
+</html>
